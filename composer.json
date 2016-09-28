@@ -1,0 +1,23 @@
+{
+    "name": "kejwmen/api-exception-handler-bundle",
+    "type": "symfony-bundle",
+    "description": "Exception Handler bundle",
+    "keywords": [],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mateusz Sip",
+            "email": "mateusz.sip@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9"
+    },
+    "autoload": {
+        "psr-4": { "kejwmen\\ExceptionHandlerBundle\\": "" },
+        "exclude-from-classmap": [
+            "/Tests/"
+        ]
+    },
+    "minimum-stability": "dev"
+}
