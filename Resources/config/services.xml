@@ -5,7 +5,7 @@
     xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <services>
-        <service id="kejwmen.listener.exception" class="Symfony\Component\HttpKernel\EventListener\ExceptionListener">
+        <service id="kejwmen.listener.exception" class="Symfony\Component\HttpKernel\EventListener\ExceptionListener" public="true">
             <tag name="kernel.event_subscriber" />
             <tag name="monolog.logger" channel="request" />
             <argument>kejwmen.controller.exception:createResponse</argument>
