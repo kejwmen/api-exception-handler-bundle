@@ -12,7 +12,7 @@
             <argument type="service" id="logger" on-invalid="null" />
         </service>
 
-        <service id="kejwmen.controller.exception" class="kejwmen\ExceptionHandlerBundle\Controller\ExceptionController">
+        <service id="kejwmen.controller.exception" class="kejwmen\ExceptionHandlerBundle\Controller\ExceptionController" public="true">
             <argument>%kernel.debug%</argument>
         </service>
     </services>
